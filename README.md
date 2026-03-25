@@ -32,7 +32,6 @@ A simple benchmark tool for comparing the performance of different V-buffer tria
 * Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home
 * Install git LFS: https://git-lfs.github.com/
 * Run (cmd): **git lfs install**
-* Clone repository (cmd): **git clone https://github.com/sebbbi/rust_test.git**
 * **IMPORTANT:** Zip download does NOT support git LFS!
 * Run (cmd): **cargo run --release --bin TEST_NAME**
 * If you want to recompile shaders, Run (cmd): **compile_shaders.bat** (or .sh for Mac)
@@ -44,11 +43,9 @@ A simple benchmark tool for comparing the performance of different V-buffer tria
 * Mouse wheel = jump backward / forward
 
 # How to import a new SDF (from .obj file)
-* Clone my SDFGen fork: https://github.com/sebbbi/SDFGen
 * This version of SDFGen has 16 bit binary output. Which is compatible with rust_test
 * Compile the project with a C++ compiler of your choice (use x64 target)
 * Run (cmd): **SDFGen.exe your_file.obj 0.125 32** (the 0.125 is the voxel size, use larger value if the SDF resolution is too large)
-* Replace this line with load_sdf("your_file.sdf"): https://github.com/sebbbi/rust_test/blob/main/src/main.rs#L59
 
 ## License
 This repository contents are released under the MIT license. See [LICENSE.md](LICENSE.md) for full text.
